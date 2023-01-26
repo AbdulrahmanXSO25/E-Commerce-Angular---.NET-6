@@ -1,7 +1,4 @@
-﻿using API.DTOs;
-using AutoMapper;
-
-namespace API.Helpers
+﻿namespace API.Helpers
 {
     public class ProductUrlResolver : IValueResolver<Product, ProductToReturnDto, string>
     {
