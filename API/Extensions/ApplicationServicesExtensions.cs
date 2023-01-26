@@ -10,7 +10,6 @@
 
             services.AddEndpointsApiExplorer();
 
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddDbContext<ApplicationDbContext>
