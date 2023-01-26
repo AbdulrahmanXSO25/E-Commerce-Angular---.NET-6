@@ -1,8 +1,4 @@
-﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore;
-using System.Reflection;
-
-namespace Infrastructure.Data
+﻿namespace Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {
