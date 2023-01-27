@@ -5,7 +5,7 @@ global using System.Linq.Expressions;
 global using System.Text;
 global using System.Threading.Tasks;
 global using Core.Entities;
-global using Core.Specification;
+global using Core.Specifications;
 global using Core.Interfaces;
 global using Microsoft.EntityFrameworkCore;
 global using System.Reflection;

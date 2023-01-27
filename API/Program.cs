@@ -2,14 +2,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 var config = builder.Configuration;
 
-builder.Services.AddAplicationServices(config);
-builder.Services.AddSwaggerDocumentation();
+var Services = builder.Services;
+
+Services.AddAplicationServices(config);
 
 var app = builder.Build();
 
-app.MapControllers();
-
-app.AddAppMethods();
-app.UseSwaggerDocumentation();
+app.UseAppServices();
 
 await app.RunAsync();

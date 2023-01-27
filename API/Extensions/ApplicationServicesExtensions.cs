@@ -35,16 +35,31 @@
                 };
             });
 
+            services.AddSwaggerDocumentation();
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod() //.AllowAnyOrigin();
+                    .WithOrigins(config.GetSection("ClientSideUrl").ToString());
+                });
+            });
+
             return services;
         }
 
-        public static async Task<IApplicationBuilder> AddAppMethods(this IApplicationBuilder app)
+        public static async Task<IApplicationBuilder> UseAppServices(this IApplicationBuilder app)
         {
             app.UseMiddleware<ExceptionMiddlware>();
 
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
@@ -65,6 +80,13 @@
                     logger.LogError(ex, "An error occured during migration");
                 }
             }
+
+            app.UseEndpoints(endpoint =>
+            {
+                endpoint.MapControllers();
+            });
+
+            app.UseSwaggerDocumentation();
 
             return app;
         }

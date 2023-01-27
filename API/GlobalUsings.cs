@@ -5,7 +5,7 @@ global using API.DTOs;
 global using API.Extensions;
 global using Core.Interfaces;
 global using Core.Entities;
-global using Core.Specification;
+global using Core.Specifications;
 global using Infrastructure.Data;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Http;
