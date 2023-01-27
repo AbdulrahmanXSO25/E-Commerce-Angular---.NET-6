@@ -8,6 +8,6 @@ Services.AddAplicationServices(config);
 
 var app = builder.Build();
 
-app.UseAppServices();
+await app.UseAppServices();
 
 await app.RunAsync();
