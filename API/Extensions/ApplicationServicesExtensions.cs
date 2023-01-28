@@ -41,8 +41,8 @@
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod() //.AllowAnyOrigin();
-                    .WithOrigins(config.GetSection("ClientSideUrl").ToString());
+                    policy.AllowAnyHeader().AllowAnyMethod()
+                    .WithOrigins("https://localhost:4200").AllowAnyMethod();
                 });
             });
 
