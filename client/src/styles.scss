@@ -6,8 +6,14 @@
 .text-main {
   color: var(--main-color);
 }
+.text-main:hover {
+  color: var(--alt-color);
+}
 .text-alt {
   color: var(--alt-color);
+}
+.text-alt:hover {
+  color: var(--main-color);
 }
 .bg-main {
   background-color: var(--main-color);

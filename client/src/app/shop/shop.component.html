@@ -44,15 +44,10 @@
       <!-- End-Catalog-Info-Section -->
 
       <!-- Start-Items-Section -->
-      <div class="row row-cols-3 g-3 mb-4" style="min-height: 50vh;">
+      <div class="row row-cols-3 g-3 mb-4">
         <div class="col" *ngFor="let product of products">
           <app-product-item [product]="product"></app-product-item>
         </div>
-      </div>
-      <div class="d-flex justify-content-center pb-4"
-      style="height: 70vh;"
-      *ngIf="totalCount == 0">
-        <h1 class="text-alt my-auto">No Products!</h1>
       </div>
       <!-- End-Items-Section -->
 
