@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #722897;
+  --alt-color: #8738f6;
+}
+.text-main {
+  color: var(--main-color);
+}
+.text-alt {
+  color: var(--alt-color);
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+.bg-alt {
+  background-color: var(--alt-color);
+}
+.btn-outline-main {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.btn-outline-main:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.btn-outline-alt {
+  color: var(--alt-color);
+  border: 1px solid var(--alt-color);
+}
+.btn-outline-alt:hover {
+  color: #fff;
+  background-color: var(--alt-color);
+}
