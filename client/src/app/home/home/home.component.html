@@ -1,4 +1,21 @@
-<div style="margin-top: 130px; text-align: center;">
-  <h1>Home Page</h1>
-  <button (click)="toastWelcome()" class="btn btn-outline-alt my-3"><h2>Welcome to XSO25 e-Commerce!</h2></button>
+<div style="margin-top: 103px;">
+  <carousel [isAnimated]="true">
+    <slide>
+      <img src="../../../assets/slide-01.jpg" alt="first slide" style="display: block; width: 100%;">
+    </slide>
+    <slide>
+      <img src="../../../assets/slide-02.jpg" alt="second slide" style="display: block; width: 100%;">
+    </slide>
+    <slide>
+      <img src="../../../assets/slide-03.png" alt="third slide" style="display: block; width: 100%;">
+    </slide>
+    <slide>
+      <img src="../../../assets/slide-04.jpg" alt="third slide" style="display: block; width: 100%;">
+    </slide>
+  </carousel>
+  <section class="featured">
+    <div class="d-flex justify-content-center pt-4">
+      <h1 class="text-main">Welcome to XSO25 e-Commerce!</h1>
+    </div>
+  </section>
 </div>
