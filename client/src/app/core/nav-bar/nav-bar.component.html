@@ -1,9 +1,9 @@
 <header class="d-flex flex-row align-items-center justify-content-between p-3 px-4 mb-3 bg-white border-bottom fixed-top shadow-sm">
     <img src="../../assets/logo.png" alt="logo" class="logo" style="max-height: 70px;" routerLink="/">
     <nav class="my-2 fs-4">
-        <a [routerLink]="['/']" routerLinkActive="router-link-active" class="p-2 mx-2 text-dark text-decoration-none">Home</a>
-        <a class="p-2 mx-2 text-dark text-decoration-none">Shop</a>
-        <a href="/" class="p-2 mx-2 text-dark text-decoration-none">Errors</a>
+        <a [routerLink]="['/']"  class="p-2 mx-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a [routerLink]="['/shop']" class="p-2 mx-2" routerLinkActive="active">Shop</a>
+        <a href="/" class="p-2 mx-2" routerLinkActive="active">Errors</a>
     </nav>
     <div class="d-flex align-items-center">
         <a href="/" class="position-relative">

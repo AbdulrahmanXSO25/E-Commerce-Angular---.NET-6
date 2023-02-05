@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
-import { FooterComponent } from './core/footer/footer.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { FooterComponent } from './core/footer/footer.component';
     BsDatepickerModule.forRoot(),
     HttpClientModule,
     CoreModule,
-    ShopModule
+    ShopModule,
+    HomeModule
   ],
   providers: [NavBarComponent],
   bootstrap: [AppComponent]

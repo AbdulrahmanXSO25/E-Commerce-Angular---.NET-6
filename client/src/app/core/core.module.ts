@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    SectionHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    SectionHeaderComponent
   ]
 })
 export class CoreModule { }

@@ -10,3 +10,11 @@
   top: -12px;
   right: 32px;
 }
+a {
+  text-decoration: none;
+  color: var(--main-color);
+
+  &.active {
+    color: var(--alt-color);
+  }
+}
