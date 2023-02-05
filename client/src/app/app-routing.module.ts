@@ -6,7 +6,7 @@ import { TestErrorComponent } from './core/test-error/test-error.component';
 import { HomeComponent } from './home/home/home.component';
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
+  {path: '', component:HomeComponent, data: {breadcrumb: 'Home'}},
   {path: 'shop', loadChildren: ()=> import('./shop/shop.module').then(m => m.ShopModule)},
   {path: 'test-error', component:TestErrorComponent},
   {path: 'server-error', component:ServerErrorComponent},
