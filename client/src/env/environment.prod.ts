@@ -1,5 +1,6 @@
-export const env = {
-  production: false,
+export const environment = {
+  production: true,
+  baseApiUrl: 'https://localhost:44396/api/',
   firebase: {
     apiKey: "AIzaSyCzukNoJ3wBQrlksf8aX_YFNkRNhs5Q-Ss",
     authDomain: "e-commerce-390d1.firebaseapp.com",

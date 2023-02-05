@@ -5,14 +5,14 @@ import { IPagination } from '../shared/models/pagination';
 import { IProduct } from '../shared/models/product';
 import { ShopParams } from '../shared/models/shopParams';
 import { IType } from '../shared/models/type';
-
+import { environment } from 'src/env/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShopService {
 
-  baseUrl = "https://localhost:44396/api/";
+  apiUrl = environment.baseApiUrl + 'products';
 
   constructor(private http: HttpClient) { }
 
@@ -26,18 +26,18 @@ export class ShopService {
     params = params.append('pageSize', shopParams.pageSize);
     if(shopParams.search) params = params.append('search', shopParams.search);
 
-    return this.http.get<IPagination>(this.baseUrl+'products', {params});
+    return this.http.get<IPagination>(this.apiUrl, {params});
   }
 
   getProduct(id: number) {
-    return this.http.get<IProduct>(this.baseUrl + 'products/' + id);
+    return this.http.get<IProduct>(this.apiUrl + id);
   }
 
   getBrands() {
-    return this.http.get<IBrand[]>(this.baseUrl+'products/brands');
+    return this.http.get<IBrand[]>(this.apiUrl+'/brands');
   }
 
   getTypes() {
-    return this.http.get<IType[]>(this.baseUrl+'products/types');
+    return this.http.get<IType[]>(this.apiUrl+'/types');
   }
 }
