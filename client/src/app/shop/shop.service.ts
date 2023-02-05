@@ -30,7 +30,7 @@ export class ShopService {
   }
 
   getProduct(id: number) {
-    return this.http.get<IProduct>(this.apiUrl + id);
+    return this.http.get<IProduct>(this.apiUrl+ '/' + id);
   }
 
   getBrands() {
