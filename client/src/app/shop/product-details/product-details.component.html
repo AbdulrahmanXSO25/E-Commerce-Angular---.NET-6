@@ -1,1 +1,35 @@
-<p>product-details works!</p>
+<div class="container">
+  <div class="row" *ngIf="product">
+      <div class="col-6">
+          <img src="{{product.pictureURL}}" alt="{{product.name}}" class="w-100">
+      </div>
+      <div class="col-6 mt-5">
+          <h2>{{product.name}}</h2>
+          <p style="font-size: 2em;">{{product.price | currency}}</p>
+
+          <div class="d-flex justify-content-start align-items-center">
+              <!-- <div class="col"> -->
+              <i
+                  (click)="quantityDecrement()"
+                  class="fa fa-minus-circle text-main me-2"
+                  style="cursor: pointer; font-size: 2em;"></i>
+              <span class="font-weight-bold" style="font-size: 1.5em;">
+                {{quantity}}
+              </span>
+              <i
+                  (click)="quantityIncrement()"
+                  class="fa fa-plus-circle text-main ms-2"
+                  style="cursor: pointer; font-size: 2em;"></i>
+              <button class="btn btn-outline-main ms-4">Add to cart</button>
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+                <h3 class="text-alt ms-4">{{errorMessage}}</h3>
+          </div>
+          <div class="row mt-4">
+              <h4>Description</h4>
+              <p>{{product.description}}</p>
+          </div>
+      </div>
+  </div>
+
+</div>

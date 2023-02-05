@@ -20,9 +20,6 @@ import { RouterModule } from '@angular/router';
     SharedModule,
     ShopRoutingModule,
     RouterModule
-  ],
-  exports: [
-    ShopComponent
   ]
 })
 export class ShopModule { }

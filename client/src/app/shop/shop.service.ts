@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IBrand } from '../shared/models/brand';
 import { IPagination } from '../shared/models/pagination';
+import { IProduct } from '../shared/models/product';
 import { ShopParams } from '../shared/models/shopParams';
 import { IType } from '../shared/models/type';
 
@@ -26,6 +27,10 @@ export class ShopService {
     if(shopParams.search) params = params.append('search', shopParams.search);
 
     return this.http.get<IPagination>(this.baseUrl+'products', {params});
+  }
+
+  getProduct(id: number) {
+    return this.http.get<IProduct>(this.baseUrl + 'products/' + id);
   }
 
   getBrands() {
