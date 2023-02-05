@@ -11,12 +11,17 @@
             services.AddEndpointsApiExplorer();
 
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddDbContext<ApplicationDbContext>
                 (x => x.UseSqlite(
                     config.GetConnectionString("DefaultConnection")
                 ));
-
+            services.AddSingleton<IConnectionMultiplexer>(c =>
+            {
+                var options = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(options);
+            });
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.InvalidModelStateResponseFactory = ActionContext =>

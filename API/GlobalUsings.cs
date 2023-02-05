@@ -15,3 +15,4 @@ global using Microsoft.Extensions.DependencyInjection;
 global using AutoMapper;
 global using System.Net;
 global using System.Text.Json;
+global using StackExchange.Redis;
