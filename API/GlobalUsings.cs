@@ -16,3 +16,7 @@ global using AutoMapper;
 global using System.Net;
 global using System.Text.Json;
 global using StackExchange.Redis;
+global using Core.Entities.Identity;
+global using Microsoft.AspNetCore.Identity;
+global using Infrastructure.Identity;
+global using Infrastructure.Identity.Migrations;

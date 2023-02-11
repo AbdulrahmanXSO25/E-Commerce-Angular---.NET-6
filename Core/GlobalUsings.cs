@@ -7,3 +7,5 @@ global using System.Threading.Tasks;
 global using Core.Entities;
 global using Core.Specifications;
 global using Core.Interfaces;
+global using Microsoft.AspNetCore.Identity;
+global using System.ComponentModel.DataAnnotations;

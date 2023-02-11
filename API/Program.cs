@@ -5,6 +5,7 @@ var config = builder.Configuration;
 var Services = builder.Services;
 
 Services.AddAplicationServices(config);
+Services.AddIdentityServices(config);
 
 var app = builder.Build();
 
@@ -18,6 +19,7 @@ app.UseRouting();
 
 app.UseCors("CorsPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 using (var scope = app.Services.CreateScope())
@@ -25,11 +27,16 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    var identityContext = services.GetRequiredService<ApplicationIdentityDbContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+
     try
     {
-        var context = services.GetRequiredService<ApplicationDbContext>();
+        await identityContext.Database.MigrateAsync();
         await context.Database.MigrateAsync();
         await ApplicationDbContextSeed.SeedAsync(context, loggerFactory);
+        await ApplicationIdentityDbContextSeed.SeedUsersAsync(userManager);
     }
     catch (Exception ex)
     {
