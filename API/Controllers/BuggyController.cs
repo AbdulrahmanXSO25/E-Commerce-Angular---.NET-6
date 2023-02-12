@@ -1,4 +1,6 @@
-﻿namespace API.Controllers
+﻿using Microsoft.AspNetCore.Authorization;
+
+namespace API.Controllers
 {
     public class BuggyController : BaseApiController
     {
@@ -6,6 +8,13 @@
         public BuggyController(ApplicationDbContext context)
         {
             _context = context;
+        }
+
+        [HttpGet("testauth")]
+        [Authorize]
+        public ActionResult<string> GetSecretText()
+        {
+            return "secretText";
         }
 
         [HttpGet("notfound")]

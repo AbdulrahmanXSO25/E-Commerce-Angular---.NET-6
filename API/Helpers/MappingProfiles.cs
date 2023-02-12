@@ -8,6 +8,8 @@
                 .ForMember(d => d.ProductBrand, o => o.MapFrom(e => e.ProductBrand.Name))
                 .ForMember(d => d.ProductType, o => o.MapFrom(e => e.ProductType.Name))
                 .ForMember(d => d.PictureURL, o => o.MapFrom<ProductUrlResolver>());
+
+            CreateMap<Address, AddressDto>().ReverseMap();
         }
     }
 }

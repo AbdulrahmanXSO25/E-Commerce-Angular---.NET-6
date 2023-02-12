@@ -4,7 +4,6 @@
     {
         private readonly IConfiguration _config;
         private readonly SymmetricSecurityKey _key;
-
         public TokenService(IConfiguration config)
         {
             _config = config;
@@ -26,7 +25,7 @@
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddDays(7),
                 SigningCredentials = creds,
-                Issuer = _config["Token:Key"]
+                Issuer = _config["Token:Issuer"]
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
