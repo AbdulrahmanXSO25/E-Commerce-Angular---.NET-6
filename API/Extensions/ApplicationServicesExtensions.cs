@@ -8,8 +8,6 @@
         {
             services.AddControllers();
 
-            services.AddEndpointsApiExplorer();
-
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<ITokenService, TokenService>();

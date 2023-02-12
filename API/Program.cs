@@ -51,7 +51,6 @@ app.UseEndpoints(endpoint =>
     endpoint.MapControllers();
 });
 
-app.UseSwagger();
-app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1"));
+app.UseSwaggerDocumentation();
 
 await app.RunAsync();
