@@ -1,6 +1,4 @@
-﻿using System.Net.Http;
-
-namespace API.Controllers
+﻿namespace API.Controllers
 {
     public class AccountController: BaseApiController
     {
@@ -99,6 +97,12 @@ namespace API.Controllers
         [HttpPost("rigster")]
         public async Task<ActionResult<UserDto>> Rigster(RigsterDto rigsterDto)
         {
+            if(CheckEmailExistsAsync(rigsterDto.Email).Result.Value)
+            {
+                return new BadRequestObjectResult(new ApiValidationErrorResponse { Errors = new[]
+                {"Email Address is in use"} });
+            }
+
             var user = new AppUser
             {
                 Email = rigsterDto.Email,
