@@ -26,3 +26,5 @@ global using System.Text;
 global using Infrastructure.Services;
 global using Microsoft.AspNetCore.Authorization;
 global using System.Security.Claims;
+global using System.ComponentModel.DataAnnotations;
+global using System.Net.Http;
