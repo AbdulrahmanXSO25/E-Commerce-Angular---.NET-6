@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ms-2">
   <div class="row" *ngIf="product">
       <div class="col-6">
           <img src="{{product.pictureURL}}" alt="{{product.name}}" class="w-100">
@@ -19,7 +19,9 @@
                   (click)="quantityIncrement()"
                   class="fa fa-plus-circle text-main ms-2"
                   style="cursor: pointer; font-size: 2em;"></i>
-              <button class="btn btn-outline-main ms-4">Add to cart</button>
+              <button (click)="updateBasket()"
+              [disabled]="quantity === quantityInBasket"
+              class="btn btn-outline-main ms-4">{{updateCartBtnText}}</button>
           </div>
           <div class="row mt-4">
               <h4>Description</h4>
