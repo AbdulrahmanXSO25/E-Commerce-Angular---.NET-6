@@ -5,7 +5,7 @@
         <div class="col-9">
           <h1>{{breadcrumbs[breadcrumbs.length-1].label |titlecase}}</h1>
         </div>
-        <div class="col-3">
+        <div class="col-3" *ngIf="!inAuthModule()">
           <nav>
             <ol class="breadcrumb">
               <xng-breadcrumb>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from 'xng-breadcrumb';
 
 @Component({
@@ -8,8 +9,13 @@ import { BreadcrumbService } from 'xng-breadcrumb';
 })
 export class SectionHeaderComponent {
 
-  constructor(public bcService:BreadcrumbService) {
+  constructor(public bcService:BreadcrumbService, private location:Location) {
 
   }
+
+  inAuthModule(): boolean {
+    return this.location.path().includes('auth');
+  }
+
 
 }
