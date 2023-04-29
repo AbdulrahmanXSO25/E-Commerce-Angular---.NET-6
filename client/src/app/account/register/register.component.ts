@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { AbstractControl, AsyncValidatorFn, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { map } from 'rxjs';
 import { AccountService } from '../account.service';
 
 @Component({
@@ -18,15 +19,23 @@ export class RegisterComponent {
 
   registerForm = this.fb.group({
     displayName: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
+    email: ['', [Validators.required, Validators.email], [this.validateEmailNotTaken()]],
     password: ['', [Validators.required, Validators.pattern(this.complexPasswordPattern)]],
   })
 
   onSubmit() {
     this.accountService.register(this.registerForm.value).subscribe({
       next: () => this.router.navigateByUrl('/shop'),
-      error: error => console.log(error.errors)
+      error: error => this.errors = error.errors
     })
+  }
+
+  validateEmailNotTaken(): AsyncValidatorFn {
+    return (control: AbstractControl) => {
+      return this.accountService.checkEmailExists(control.value).pipe(
+        map(result => result ? {emailExists: true} : null)
+      )
+    }
   }
 
 }
