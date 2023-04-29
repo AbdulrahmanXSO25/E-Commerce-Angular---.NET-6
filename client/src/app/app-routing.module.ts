@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './core/guards/auth.guard';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { TestErrorComponent } from './core/test-error/test-error.component';
@@ -9,7 +10,11 @@ const routes: Routes = [
   {path: '', component:HomeComponent, data: {breadcrumb: 'Home'}},
   {path: 'shop', loadChildren: ()=> import('./shop/shop.module').then(m => m.ShopModule)},
   {path: 'basket', loadChildren: ()=> import('./basket/basket.module').then(m => m.BasketModule)},
-  {path: 'checkout', loadChildren: ()=> import('./checkout/checkout.module').then(m => m.CheckoutModule)},
+  {
+    path: 'checkout',
+    canActivate: [AuthGuard],
+    loadChildren: ()=> import('./checkout/checkout.module').then(m => m.CheckoutModule)
+  },
   {path: 'auth', loadChildren: ()=> import('./account/account.module').then(m => m.AccountModule)},
   {path: 'test-error', component:TestErrorComponent},
   {path: 'server-error', component:ServerErrorComponent},
