@@ -6,6 +6,7 @@
   placeholder={{label}}
   [ngClass]="control.touched ? control.invalid ? 'is-invalid' : 'is-valid' : null"
   >
+  <div *ngIf="control.status === 'PENDING'" class="fa fa-spinner fa-spin loader"></div>
   <label for="floatingInput">{{label}}</label>
   <div *ngIf="control.errors?.['required']" class="invalid-feedback">Please enter your {{label}}</div>
   <div *ngIf="control.errors?.['email']" class="invalid-feedback">Invalid email address!</div>

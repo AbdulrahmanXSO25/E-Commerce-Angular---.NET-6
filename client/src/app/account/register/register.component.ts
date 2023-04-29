@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AbstractControl, AsyncValidatorFn, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { map } from 'rxjs';
+import { debounceTime, finalize, map, switchMap, take } from 'rxjs';
 import { AccountService } from '../account.service';
 
 @Component({
@@ -32,8 +32,15 @@ export class RegisterComponent {
 
   validateEmailNotTaken(): AsyncValidatorFn {
     return (control: AbstractControl) => {
-      return this.accountService.checkEmailExists(control.value).pipe(
-        map(result => result ? {emailExists: true} : null)
+      return control.valueChanges.pipe(
+        debounceTime(1000),
+        take(1),
+        switchMap(() => {
+          return this.accountService.checkEmailExists(control.value).pipe(
+            map(result => result ? {emailExists: true} : null),
+            finalize(() => control.markAsTouched())
+          )
+        })
       )
     }
   }
