@@ -94,8 +94,8 @@
             };
         }
 
-        [HttpPost("rigster")]
-        public async Task<ActionResult<UserDto>> Rigster(RigsterDto rigsterDto)
+        [HttpPost("register")]
+        public async Task<ActionResult<UserDto>> Register(RigsterDto rigsterDto)
         {
             if(CheckEmailExistsAsync(rigsterDto.Email).Result.Value)
             {

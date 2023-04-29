@@ -1,24 +1,25 @@
 <div class="d-flex justify-content-center mt-5">
   <div class="col-3">
-    <form>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
       <div class="text-center mb-4">
         <h1 class="mb-3">Register</h1>
       </div>
-      <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="DisplayName">
-        <label for="floatingInput">Display Name</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-      </div>
+
+      <app-text-input [formControl]="registerForm.controls['displayName']" [label]="'Display Name'"></app-text-input>
+      <app-text-input [formControl]="registerForm.controls['email']" [label]="'Email Address'"></app-text-input>
+      <app-text-input [formControl]="registerForm.controls['password']" [type]="'password'" [label]="'Password'"></app-text-input>
+
+      <ul class="text-danger list-unstyled" *ngIf="errors">
+        <li *ngFor="let error of errors">
+          {{error}}
+        </li>
+      </ul>
+
       <div class="d-grid">
-        <button class="btn btn-lg btn-primary mt-3" type="submit">Sign up</button>
+        <button [disabled]="registerForm.invalid" class="btn btn-lg btn-primary mt-3" type="submit">Sign Up</button>
       </div>
+
     </form>
   </div>
 </div>

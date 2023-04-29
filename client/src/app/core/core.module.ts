@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
       preventDuplicates: true
     }),
     BreadcrumbModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    SharedModule
   ],
   exports: [
     NavBarComponent,
