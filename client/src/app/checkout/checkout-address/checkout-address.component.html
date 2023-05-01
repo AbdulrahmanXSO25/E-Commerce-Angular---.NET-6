@@ -1,0 +1,28 @@
+<div class="mt-4" *ngIf="checkoutForm" [formGroup]="checkoutForm">
+  <div class="d-flex justify-content-between align-items-center">
+    <h4>Shipping Adress</h4>
+    <button class="btn btn-outline-success mb-3">
+      Save as default adress
+    </button>
+  </div>
+  <div class="row" formGroupName="addressForm">
+    <div class="form-group col-6">
+      <app-text-input [label]="'First Name'" formControlName="firstName"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Last Name'" formControlName="lastName"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Street'" formControlName="street"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'City'" formControlName="city"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'State'" formControlName="state"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Zip code'" formControlName="zipCode"></app-text-input>
+    </div>
+  </div>
+</div>

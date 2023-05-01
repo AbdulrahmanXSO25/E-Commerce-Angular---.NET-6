@@ -24,7 +24,7 @@ import { CdkStepperModule } from '@angular/cdk/stepper'
     PaginationModule.forRoot(),
     ReactiveFormsModule,
     BsDropdownModule.forRoot(),
-    CdkStepperModule
+    CdkStepperModule,
 
   ],
   exports: [
@@ -36,6 +36,7 @@ import { CdkStepperModule } from '@angular/cdk/stepper'
     ReactiveFormsModule,
     BsDropdownModule,
     TextInputComponent,
+    CdkStepperModule,
     StepperComponent
   ]
 })
