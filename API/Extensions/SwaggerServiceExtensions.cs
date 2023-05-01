@@ -7,7 +7,7 @@
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "E-Commerce API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "XSO25 e-Commerce API", Version = "v1" });
 
                 var securitySchema = new OpenApiSecurityScheme
                 {

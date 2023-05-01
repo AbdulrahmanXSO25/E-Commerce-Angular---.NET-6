@@ -6,7 +6,7 @@
         {
         }
 
-        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail, DateTime orderDate, Address shipToAddress, DeliveryMethod deliveryMethod,
+        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail, Address shipToAddress, DeliveryMethod deliveryMethod,
             decimal subtotal)
         {
             BuyerEmail = buyerEmail;
@@ -30,7 +30,7 @@
 
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
-        public string PaymentIntentId { get; set; }
+        public string PaymentIntentId { get; set; } = "1";
 
         public decimal GetTotal()
         {

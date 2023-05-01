@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Data
+﻿using StackExchange.Redis;
+
+namespace Infrastructure.Data
 {
     public class BasketRepository : IBasketRepository
     {

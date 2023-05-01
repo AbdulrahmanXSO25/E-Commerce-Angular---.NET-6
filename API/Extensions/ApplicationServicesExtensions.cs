@@ -10,10 +10,12 @@
 
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddDbContext<ApplicationDbContext>
-                (x => x.UseSqlite(
+                (x => x.UseNpgsql(  
                     config.GetConnectionString("DefaultConnection")
                 ));
             services.AddSingleton<IConnectionMultiplexer>(c =>

@@ -19,7 +19,6 @@ global using StackExchange.Redis;
 global using Core.Entities.Identity;
 global using Microsoft.AspNetCore.Identity;
 global using Infrastructure.Identity;
-global using Infrastructure.Identity.Migrations;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.IdentityModel.Tokens;
 global using System.Text;

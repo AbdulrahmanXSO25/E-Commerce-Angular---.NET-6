@@ -50,6 +50,21 @@
 
                     await context.SaveChangesAsync();
                 }
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var deliveryData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/delivery.json");
+
+                    var deliveryMethods = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryData);
+
+                    foreach (var method in deliveryMethods)
+                    {
+                        context.DeliveryMethods.Add(method);
+                    }
+
+                    await context.SaveChangesAsync();
+                }
             }
 
             catch(Exception ex)

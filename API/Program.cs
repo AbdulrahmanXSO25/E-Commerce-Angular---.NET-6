@@ -9,6 +9,8 @@ Services.AddIdentityServices(config);
 
 var app = builder.Build();
 
+app.UseSwaggerDocumentation();
+
 app.UseMiddleware<ExceptionMiddlware>();
 
 app.UseStatusCodePagesWithReExecute("/errors/{0}");
@@ -22,6 +24,10 @@ app.UseCors("CorsPolicy");
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.MapControllers();
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", isEnabled: true);
 
 using (var scope = app.Services.CreateScope())
 {
@@ -45,12 +51,5 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "An error occured during migration");
     }
 }
-
-app.UseEndpoints(endpoint =>
-{
-    endpoint.MapControllers();
-});
-
-app.UseSwaggerDocumentation();
 
 await app.RunAsync();
