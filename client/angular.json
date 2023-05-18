@@ -51,8 +51,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/env/environment.ts",
-                  "with": "src/env/environment.prod.ts"
+                  "replace": "src/env/environment.prod.ts",
+                  "with": "src/env/environment.ts"
                 }
               ],
               "budgets": [
