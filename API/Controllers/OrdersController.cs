@@ -1,5 +1,4 @@
 ﻿using Core.Entities.OrderAggregate;
-using StackExchange.Redis;
 using Address = Core.Entities.OrderAggregate.Address;
 using Order = Core.Entities.OrderAggregate.Order;
 

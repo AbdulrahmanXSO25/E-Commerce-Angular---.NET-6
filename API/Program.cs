@@ -27,8 +27,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", isEnabled: true);
-
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

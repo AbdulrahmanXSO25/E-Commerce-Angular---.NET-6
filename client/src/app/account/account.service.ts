@@ -18,7 +18,7 @@ export class AccountService {
   constructor(private http:HttpClient, private router: Router) { }
 
   loadCurrentUser(token: string | null) {
-    if (token === null) {
+    if (token == null) {
       this.currentUserSource.next(null);
       return of(null);
     }
@@ -31,8 +31,8 @@ export class AccountService {
         if (user) {
           localStorage.setItem('token', user.token);
           this.currentUserSource.next(user);
-        }
-        else {
+          return user;
+        } else {
           return null;
         }
       })
