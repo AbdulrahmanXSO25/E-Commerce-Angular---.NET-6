@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:5001/api/',
-  appRoot: 'https://localhost:5001/api/'
+  apiUrl: 'http://my-ecommerce-angular-dotnet.somee.com/api/',
+  appRoot: 'http://my-ecommerce-angular-dotnet.somee.com/api/'
 };
