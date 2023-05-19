@@ -15,6 +15,11 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: ()=> import('./checkout/checkout.module').then(m => m.CheckoutModule)
   },
+  {
+    path: 'orders',
+    canActivate: [AuthGuard],
+    loadChildren: ()=> import('./orders/orders.module').then(m => m.OrdersModule)
+  },
   {path: 'auth', loadChildren: ()=> import('./account/account.module').then(m => m.AccountModule)},
   {path: 'test-error', component:TestErrorComponent},
   {path: 'server-error', component:ServerErrorComponent},

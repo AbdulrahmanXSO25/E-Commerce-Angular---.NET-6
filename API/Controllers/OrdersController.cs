@@ -23,7 +23,7 @@ namespace API.Controllers
 
             var address = _mapper.Map<AddressDto, Address>(orderDto.ShipToAddress);
 
-            var order = await _orderService.CreateOrderAsync(email, orderDto.DeliveryMethod,
+            var order = await _orderService.CreateOrderAsync(email, orderDto.DeliveryMethodId,
                 orderDto.BasketId, address);
 
             if (order == null) return BadRequest(new ApiResponse(400, "Problem Creating Order"));

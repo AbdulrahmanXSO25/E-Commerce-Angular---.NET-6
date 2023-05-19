@@ -4,72 +4,11 @@
     </div>
     <ng-container *ngIf="(basketService.basketSource$ | async) as basket">
       <div class="container">
-        <div class="table-responsive">
-          <table class="table">
-            <thead class="bg-light text-uppercase">
-              <th><div class="py-2">Product</div></th>
-              <th><div class="py-2">Price</div></th>
-              <th><div class="py-2">Quantity</div></th>
-              <th><div class="py-2">Total</div></th>
-              <th><div class="py-2"></div></th>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of basket.items">
-                <th>
-                  <div class="p-2 d-inline-block">
-                    <img src="{{item.pictureURL}}"
-                        alt="{{item.productName}}"
-                        class="img-fluid"
-                        style="max-height: 50px;">
-                  </div>
-                  <div class="ms-3 d-inline-block align-middle">
-                    <h5 class="mb-0">
-                      <a class="text-dark text-decoration-none">
-                        {{item.productName}}
-                      </a>
-                    </h5>
-                    <span class="text-muted fst-italic">
-                      Type: {{item.type}}
-                    </span>
-                  </div>
-                </th>
-                <th>
-                  <div class="p-2 d-inline-block">
-                    <strong>{{item.price | currency}}</strong>
-                  </div>
-                </th>
-                <th>
-                  <div class="p-2 d-inline-block">
-                    <i
-                        (click)="removeProduct(item.id)"
-                        class="fa fa-minus-circle text-main me-2"
-                        style="cursor: pointer; font-size: 1.4em;"></i>
-                    <span class="font-weight-bold" style="font-size: 1.5em;">
-                      {{item.quantity}}
-                    </span>
-                    <i
-                        (click)="quantityIncrement(item)"
-                        class="fa fa-plus-circle text-main ms-2"
-                        style="cursor: pointer; font-size: 1.4em;"></i>
-                  </div>
-                </th>
-                <th>
-                  <div class="p-2 d-inline-block">
-                    {{item.quantity * item.price  | currency}}
-                  </div>
-                </th>
-                <th>
-                  <div class="p-2 d-inline-block">
-                    <button (click)="removeProduct(item.id,item.quantity)"  class="btn btn-outline-danger">
-                      <i class="fa fa-remove text-danger me-2"
-                      style="cursor: pointer; font-size: 1.4em"></i>
-                      Remove
-                    </button>
-                  </div>
-                </th>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <app-basket-summary
+          (addItem)="quantityIncrement($event)"
+          (removeItem)="removeProduct($event)">
+          </app-basket-summary>
         </div>
 
         <div class="row">

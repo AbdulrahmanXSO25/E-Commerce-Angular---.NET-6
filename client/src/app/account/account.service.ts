@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, map, of, ReplaySubject } from 'rxjs';
 import { environment } from 'src/env/environment';
-import { IUser } from '../shared/models/user';
+import { IAddress, IUser } from '../shared/models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -66,6 +66,14 @@ export class AccountService {
 
   checkEmailExists(email: string) {
     return this.http.get<boolean>(this.baseUrl + 'account/emailExists?email=' + email);
+  }
+
+  getUserAddress() {
+    return this.http.get<IAddress>(this.baseUrl + 'account/address');
+  }
+
+  updateUserAddress(address: IAddress) {
+    return this.http.put(this.baseUrl + 'account/address', address);
   }
 
 }
