@@ -7,6 +7,6 @@
     <ActiveDebugProfile>API</ActiveDebugProfile>
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>D:\E-Commerce Angular\E-Commerce Angular &amp; .NET 6\API\Properties\PublishProfiles\FTPProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\E-Commerce Angular\E-Commerce Angular &amp; .NET 6\API\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
