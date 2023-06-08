@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://my-ecommerce-angular-dotnet.somee.com/api/',
-  appRoot: 'http://my-ecommerce-angular-dotnet.somee.com/api/'
+  apiUrl: 'https://xso25ecommerce.azurewebsites.net/api/',
+  appRoot: 'https://xso25ecommerce.azurewebsites.net/api/'
 };
