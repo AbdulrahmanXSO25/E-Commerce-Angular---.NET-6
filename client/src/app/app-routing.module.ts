@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './core/guards/auth.guard';
+import { canActivate} from './core/guards/auth.guard';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { TestErrorComponent } from './core/test-error/test-error.component';
@@ -12,12 +12,12 @@ const routes: Routes = [
   {path: 'basket', loadChildren: ()=> import('./basket/basket.module').then(m => m.BasketModule)},
   {
     path: 'checkout',
-    canActivate: [AuthGuard],
+    canActivate: [canActivate],
     loadChildren: ()=> import('./checkout/checkout.module').then(m => m.CheckoutModule)
   },
   {
     path: 'orders',
-    canActivate: [AuthGuard],
+    canActivate: [canActivate],
     loadChildren: ()=> import('./orders/orders.module').then(m => m.OrdersModule)
   },
   {path: 'auth', loadChildren: ()=> import('./account/account.module').then(m => m.AccountModule)},
@@ -27,8 +27,8 @@ const routes: Routes = [
   {path: '**', redirectTo: '', pathMatch:'full'}
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
 export class AppRoutingModule { }

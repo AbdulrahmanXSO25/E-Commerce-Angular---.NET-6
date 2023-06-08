@@ -1,27 +1,24 @@
-import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { map, Observable } from 'rxjs';
-import { AccountService } from 'src/app/account/account.service';
+import { ActivatedRouteSnapshot, CanActivateChildFn, CanActivateFn, Router, RouterStateSnapshot } from "@angular/router";
+import { AccountService } from "src/app/account/account.service";
+import { inject } from "@angular/core";
+import { map, catchError, of } from "rxjs";
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthGuard implements CanActivate {
+export const canActivate: CanActivateFn = (
+  route: ActivatedRouteSnapshot,
+  state: RouterStateSnapshot
+) => {
+  const authService = inject(AccountService);
+  const router = inject(Router);
 
-  constructor(private accountService:AccountService, private router:Router) {}
+  return authService.currentUser$.pipe(
+    map(auth => {
+      if (auth) return true;
+      else {
+        router.navigate(['/auth/login'], {queryParams: {returnUrl: state.url}});
+        return false;
+      }
+    })
+  );
+};
 
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean> {
-    return this.accountService.currentUser$.pipe(
-      map(auth => {
-        if (auth) return true;
-        else {
-          this.router.navigate(['/auth/login'], {queryParams: {returnUrl: state.url}});
-          return false;
-        }
-      })
-    );
-  }
-
-}
+export const canActivateChild: CanActivateChildFn = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => canActivate(route, state);
