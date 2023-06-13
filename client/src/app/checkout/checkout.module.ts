@@ -8,6 +8,7 @@ import { CheckoutAddressComponent } from './checkout-address/checkout-address.co
 import { CheckoutPaymentComponent } from './checkout-payment/checkout-payment.component';
 import { CheckoutReviewComponent } from './checkout-review/checkout-review.component';
 import { CheckoutDeliveryComponent } from './checkout-delivery/checkout-delivery.component';
+import { StepperComponent } from '../shared/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,12 @@ import { CheckoutDeliveryComponent } from './checkout-delivery/checkout-delivery
     CheckoutAddressComponent,
     CheckoutPaymentComponent,
     CheckoutReviewComponent,
-    CheckoutDeliveryComponent
+    CheckoutDeliveryComponent,
   ],
   imports: [
     CommonModule,
     CheckoutRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class CheckoutModule { }

@@ -4,7 +4,7 @@ import { IProduct } from '../shared/models/product';
 import { ShopParams } from '../shared/models/shopParams';
 import { IType } from '../shared/models/type';
 import { ShopService } from './shop.service';
-import { KeyValuePipe } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -14,7 +14,7 @@ import { KeyValuePipe } from '@angular/common';
 
 export class ShopComponent implements OnInit {
 
-  constructor(private shopservice:ShopService) { }
+  constructor(private shopservice:ShopService, private activatedRoute:ActivatedRoute) { }
 
   @ViewChild('search') searchTerm?:ElementRef;
   products: IProduct[];
@@ -41,6 +41,7 @@ export class ShopComponent implements OnInit {
         this.shopParams.pageNumber = response.pageIndex;
         this.shopParams.pageSize = response.pageSize;
         this.totalCount = response.count;
+        console.log(response.data);
       },
       error: error => console.log(error)
     })

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { ToastrModule } from 'ngx-toastr';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
     }),
-    CarouselModule
+    CarouselModule,
+    RouterLink
   ],
   exports: [HomeComponent]
 })

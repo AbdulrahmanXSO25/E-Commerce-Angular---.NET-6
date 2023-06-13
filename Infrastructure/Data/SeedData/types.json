@@ -1,18 +1,18 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Phones"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Smart Tvs"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Laptops"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Headphones"
   }
 ]

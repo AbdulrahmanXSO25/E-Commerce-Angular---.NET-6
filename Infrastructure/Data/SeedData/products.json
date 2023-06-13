@@ -1,146 +1,194 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureURL": "images/products/sb-ang1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Samsung Galaxy A52 - 256Gb - Black - LTE",
+    "PictureURL": "images/Samsung Galaxy A52 - 256Gb - Black - LTE.jpg",
+    "Price": 10000.00,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
-    "PictureURL": "images/products/sb-ang2.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Samsung 43 Inch Class Series LED 4K",
+    "PictureURL": "images/Samsung 43 Inch Class Series LED 4K.jpg",
+    "Price": 12000.00,
+    "ProductBrandId": 1,
+    "ProductTypeId": 2
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureURL": "images/products/sb-core1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "JBL Tune 760NC",
+    "PictureURL": "images/JBL Tune 760NC.jpg",
+    "Price": 3000.00,
+    "ProductBrandId": 5,
+    "ProductTypeId": 4
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
-    "PictureURL": "images/products/sb-core2.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "JBL T460BT Extra Bass",
+    "PictureURL": "images/JBL T460BT Extra Bass.jpg",
+    "Price": 1800.00,
+    "ProductBrandId": 5,
+    "ProductTypeId": 4
   },
   {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureURL": "images/products/sb-react1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 4
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "JBL Live 660NC - Wireless Over-Ear",
+    "PictureURL": "images/JBL Live 660NC - Wireless Over-Ear.jpg",
+    "Price": 4500.00,
+    "ProductBrandId": 5,
+    "ProductTypeId": 4
   },
   {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureURL": "images/products/sb-ts1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Bose QuietComfort 45 - Triple Black",
+    "PictureURL": "images/Bose QuietComfort 45 - Triple Black.jpg",
+    "Price": 7200.00,
+    "ProductBrandId": 4,
+    "ProductTypeId": 4
   },
   {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureURL": "images/products/hat-core1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 2
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Bose 700 with Alexa Voice Control, Silver",
+    "PictureURL": "images/Bose 700 with Alexa Voice Control, Silver.jpg",
+    "Price": 8300.00,
+    "ProductBrandId": 4,
+    "ProductTypeId": 4
   },
   {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureURL": "images/products/hat-react1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "ASUS ROG Strix Go Gaming Headphones with USB-C Adapter",
+    "PictureURL": "images/ASUS ROG Strix Go Gaming Headphones with USB-C Adapter.jpg",
+    "Price": 1600.00,
+    "ProductBrandId": 6,
+    "ProductTypeId": 4
   },
   {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureURL": "images/products/hat-react2.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "ASUS ROG Strix G16 Gaming Laptop, FHD 165Hz, RTX 4060, Intel Core i7-13650HX",
+    "PictureURL": "images/ASUS ROG Strix G16 Gaming Laptop, FHD 165Hz, RTX 4060, Intel Core i7-13650HX.jpg",
+    "Price": 33000.00,
+    "ProductBrandId": 6,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureURL": "images/products/glove-code1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "ASUS ROG Strix G17 Gaming Laptop, QHD 240Hz, RTX 4060, AMD Ryzen 9 7945HX",
+    "PictureURL": "images/ASUS ROG Strix G17 Gaming Laptop, QHD 240Hz, RTX 4060, AMD Ryzen 9 7945HX.jpg",
+    "Price": 40000.00,
+    "ProductBrandId": 6,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureURL": "images/products/glove-code2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "ASUS Chromebook Vibe C55 Flip, Cloud Gaming Laptop, FHD 144 Hz, Intel Core i5-1135G7",
+    "PictureURL": "images/ASUS Chromebook Vibe C55 Flip, Cloud Gaming Laptop, FHD 144 Hz, Intel Core i5-1135G7.jpg",
+    "Price": 21000.00,
+    "ProductBrandId": 6,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureURL": "images/products/glove-react1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Late 2020 Apple MacBook Air with Apple M1 Chip - Silver",
+    "PictureURL": "images/Late 2020 Apple MacBook Air with Apple M1 Chip - Silver.jpg",
+    "Price": 24000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureURL": "images/products/glove-react2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Apple 2022 MacBook Air Laptop with M2 chip - Space Gray",
+    "PictureURL": "images/Apple 2022 MacBook Air Laptop with M2 chip - Space Gray.jpg",
+    "Price": 35000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureURL": "images/products/boot-redis1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 6
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "ASUS TUF Gaming F15, 144Hz FHD, Intel Core i5-11400H, RTX 2050",
+    "PictureURL": "images/ASUS TUF Gaming F15, 144Hz FHD, Intel Core i5-11400H, RTX 2050.jpg",
+    "Price": 22000.00,
+    "ProductBrandId": 6,
+    "ProductTypeId": 3
   },
   {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureURL": "images/products/boot-core2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "LG 65-Inch Class UR9000 Series Alexa Built-in 4K Smart TV",
+    "PictureURL": "images/LG 65-Inch Class UR9000 Series Alexa Built-in 4K Smart TV.jpg",
+    "Price": 17000.00,
+    "ProductBrandId": 3,
+    "ProductTypeId": 2
   },
   {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureURL": "images/products/boot-core1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "LG 27LP600B-P 27 Inch Full HD IPS TV",
+    "PictureURL": "images/LG 27LP600B-P 27 Inch Full HD IPS TV.jpg",
+    "Price": 4600.00,
+    "ProductBrandId": 3,
+    "ProductTypeId": 2
   },
   {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 150,
-    "PictureURL": "images/products/boot-ang2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": " LG Signature 88-inch Class OLED Z2 Series 8K SmartTV with Alexa Built-in",
+    "PictureURL": "images/LG Signature 88-inch Class OLED Z2 Series 8K SmartTV with Alexa Built-in.jpg",
+    "Price": 60000.00,
+    "ProductBrandId": 3,
+    "ProductTypeId": 2
   },
   {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureURL": "images/products/boot-ang1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Apple iPhone 14 Pro Max, 256GB, Silver",
+    "PictureURL": "images/Apple iPhone 14 Pro Max, 256GB, Silver.jpg",
+    "Price": 34000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Apple iPhone 14 Pro Max, 128GB, Deep Purple",
+    "PictureURL": "images/Apple iPhone 14 Pro Max, 128GB, Deep Purple.jpg",
+    "Price": 35000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Apple iPhone 12 Pro Max, 256GB, Pacific Blue",
+    "PictureURL": "images/Apple iPhone 12 Pro Max, 256GB, Pacific Blue.jpg",
+    "Price": 26000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "iPhone 13 Pro Max, 1TB, Gold - Unlocked",
+    "PictureURL": "images/iPhone 13 Pro Max, 1TB, Gold - Unlocked.jpg",
+    "Price": 33000.00,
+    "ProductBrandId": 2,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "SAMSUNG Galaxy S23 Ultra Cell Phone, 512GB, 200MP Camera, Long Battery Life, S Pen, US Version, 2023",
+    "PictureURL": "images/SAMSUNG Galaxy S23 Ultra Cell Phone, 512GB, 200MP Camera, Long Battery Life, S Pen, US Version, 2023.jpg",
+    "Price": 35000.00,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": "Samsung - Galaxy A71 A716U 5G Fully Unlocked 128GB - Prism Cube Black",
+    "PictureURL": "images/Samsung - Galaxy A71 A716U 5G Fully Unlocked 128GB - Prism Cube Black.jpg",
+    "Price": 9900.00,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
+  },
+  {
+    "Description": "Introducing the XSO25 electronic product which helps online shoppers conduct transactions with ease.This powerful eCommerce tool not only directs visitors to the correct product page, but also provides inventory data and pricinginformation on products for quick purchase. With an intuitive user interface, this device makes shopping a breeze for online consumers.",
+    "Name": " SAMSUNG Galaxy A53 5G A Series Cell Phone, 128GB, 6.5Inch FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+    "PictureURL": "images/SAMSUNG Galaxy A53 5G A Series Cell Phone, 128GB, 6.5Inch FHD Super AMOLED Screen, Long Battery Life, US Version, Black.jpg",
+    "Price": 12700.00,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
   }
 ]

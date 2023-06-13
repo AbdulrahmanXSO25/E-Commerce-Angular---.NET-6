@@ -11,6 +11,7 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { BasketSummaryComponent } from './basket-summary/basket-summary.component'
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BasketSummaryComponent } from './basket-summary/basket-summary.componen
     ReactiveFormsModule,
     BsDropdownModule.forRoot(),
     CdkStepperModule,
+    RouterLink
 
   ],
   exports: [

@@ -9,6 +9,10 @@
     opacity: 1;
   }
 }
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
 .hover-overlay {
   position: absolute;
   width: 100%;

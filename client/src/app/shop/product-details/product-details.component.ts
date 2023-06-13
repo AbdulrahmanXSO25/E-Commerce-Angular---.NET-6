@@ -43,16 +43,16 @@ export class ProductDetailsComponent implements OnInit{
     if (id) this.shopService.getProduct(id).subscribe({
       next: product => {
         this.product = product;
-      this.bcService.set('@productName',this.product.name);
-      this.basketService.basketSource$.pipe(take(1)).subscribe({
-        next: basket => {
-          const item = basket.items.find(x => x.id === +id);
-          if (item) {
-            this.quantity = item.quantity;
-            this.quantityInBasket = item.quantity;
-          }
-        }
-      })
+      // this.bcService.set('@productName',this.product.name);
+      // this.basketService.basketSource$.pipe(take(1)).subscribe({
+      //   next: basket => {
+      //     const item = basket.items.find(x => x.id === +id);
+      //     if (item) {
+      //       this.quantity = item.quantity;
+      //       this.quantityInBasket = item.quantity;
+      //     }
+      //   }
+      // })
       },
       error: error => console.log(error)
     })
