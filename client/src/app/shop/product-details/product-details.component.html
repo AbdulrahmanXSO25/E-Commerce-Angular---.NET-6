@@ -1,0 +1,33 @@
+<div class="container ms-2">
+  <div class="row" *ngIf="product">
+      <div class="col-6 my-5">
+          <img src="{{product.pictureURL}}" alt="{{product.name}}" class="w-75 rounded">
+      </div>
+      <div class="col-6 mt-5">
+          <h2>{{product.name}}</h2>
+          <p style="font-size: 2em;">{{product.price | currency}}</p>
+
+          <div class="d-flex justify-content-start align-items-center">
+              <i
+                  (click)="quantityDecrement()"
+                  class="fa fa-minus-circle text-main me-2"
+                  style="cursor: pointer; font-size: 2em;"></i>
+              <span class="font-weight-bold" style="font-size: 1.5em;">
+                {{quantity}}
+              </span>
+              <i
+                  (click)="quantityIncrement()"
+                  class="fa fa-plus-circle text-main ms-2"
+                  style="cursor: pointer; font-size: 2em;"></i>
+              <button (click)="updateBasket()"
+              [disabled]="quantity === quantityInBasket"
+              class="btn btn-outline-main ms-4">{{updateCartBtnText}}</button>
+          </div>
+          <div class="row mt-4">
+              <h4 class="text-info">Description</h4>
+              <p>{{product.description}}</p>
+          </div>
+      </div>
+  </div>
+
+</div>
