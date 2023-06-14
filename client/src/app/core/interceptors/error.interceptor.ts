@@ -23,7 +23,8 @@ export class ErrorInterceptor implements HttpInterceptor {
             this.toastr.error(error.error.message, error.status.toString());
           };
           if (error.status === 404) {
-            this.router.navigateByUrl('/not-found');
+            if(!error.url.includes('account'))
+              this.router.navigateByUrl('/not-found');
           };
           if (error.status === 500) {
             const navigationExtras: NavigationExtras = {state: {error: error.error}}
