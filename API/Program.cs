@@ -19,7 +19,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-//app.UseStaticFiles();
+app.UseStaticFiles();
 
 app.UseCors("CorsPolicy");
 
